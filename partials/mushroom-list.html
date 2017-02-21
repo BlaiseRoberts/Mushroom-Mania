@@ -1,0 +1,12 @@
+<table class="table table-hover">
+			 <tr>
+			    <th>Name</th>
+			    <th>Description</th> 
+			    <th>Edible</th>
+			  </tr>
+			  <tr ng-repeat="item in mushrooms | filter:{description:searchText, edible: foodData}">
+			    <th>{{item.name[0]}}</td>
+			    <td>{{item.description}}</td> 
+			    <td class="{{item.color}}">{{item.edible}}</td>
+			  </tr>
+		</table>
